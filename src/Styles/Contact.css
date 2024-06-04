@@ -1,0 +1,145 @@
+.container {
+  padding: 140px 0px 70px;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 132px;
+  height: min-content;
+  justify-content: center;
+  min-height: 70vh;
+  overflow: visible;
+  position: relative;
+  scroll-margin-top: 80px;
+  width: 88%;
+  margin: 0 auto;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 25.6px;
+  text-align: left;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.contact-me {
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 30px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  transform: rotate(353deg);
+  width: 533px;
+}
+
+.redes-sociales {
+  align-items: center;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: center;
+  overflow: visible;
+  padding: 40px 0 0 200px;
+  position: relative;
+  transform: perspective(1200px) rotate(10deg);
+  width: min-content;
+}
+
+.email {
+  color: #f0f8ff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.contactame:hover {
+  box-shadow: 0 0px 100px rgba(187, 187, 187, 0.4),
+    0 0px 100px rgba(255, 255, 255, 0.4), 0 0px 50px rgb(42, 42, 42);
+  padding: 5px 10px;
+  border-radius: 20px;
+  letter-spacing: 10px;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+.city:hover {
+  box-shadow: 0 0px 100px rgba(187, 187, 187, 0.4),
+    0 0px 100px rgba(255, 255, 255, 0.4), 0 0px 50px rgb(42, 42, 42);
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.email:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+  .contact-me {
+    width: 100%;
+  }
+  h4 {
+    bottom: 3rem;
+    left: 3rem;
+  }
+  h5 {
+    position: absolute;
+    left: 6rem;
+    bottom: 14rem;
+  }
+  .redes-sociales {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    right: 10rem;
+    bottom: 4rem;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .container {
+    width: 100%;
+    display: flex;
+  }
+  .contact-me {
+    width: 100%;
+  }
+  h4 {
+    bottom: 6rem;
+    left: 4rem;
+    text-align: center;
+  }
+  h5 {
+    position: absolute;
+    left: 6rem;
+    bottom: 7rem;
+  }
+  .redes-sociales {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    right: 5rem;
+    top: 1rem;
+  }
+}

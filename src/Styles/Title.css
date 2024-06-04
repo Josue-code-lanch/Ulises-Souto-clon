@@ -1,0 +1,44 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  font-size: 99px;
+  font-weight: 400;
+  color: aliceblue;
+  width: 700px;
+  max-width: 100%;
+  box-shadow: 0 0px 200px rgba(187, 187, 187, 0.5),
+    0 0px 40px rgba(255, 255, 255, 0.6), 0 0px 200px rgb(42, 42, 42);
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  padding: 20px 0px 20px 0px;
+  transform: translate(-50%, -50%);
+}
+
+h1:hover {
+  transform: scale(1.1) translate(-50%, -50%) perspective(500px);
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    width: 100%;
+    font-size: 4rem;
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 810px) {
+  h1 {
+    width: 70%;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,194 @@
+.musica {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: aliceblue;
+  border-bottom: 1px solid aliceblue;
+  max-width: 85%;
+  position: relative;
+  margin-top: 12vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titleSong {
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+
+.descriptionSong {
+  line-height: 16.8px;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  z-index: 1;
+}
+
+.see-more {
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 300;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 319px) and (max-width: 480px) {
+  .musica {
+    margin-top: 0;
+  }
+  .musica-1 .see-more {
+    color: red;
+  }
+  .musica-2 .see-more {
+    color: rgb(255, 239, 219);
+  }
+  .musica-3 .see-more {
+    color: rgb(255, 140, 0);
+  }
+  .musica-4 .see-more {
+    color: rgb(135, 177, 255);
+  }
+  .musica-5 .see-more {
+    color: aliceblue;
+  }
+  .musica-6 .see-more {
+    color: rgb(228, 128, 128);
+  }
+  .musica-7 .see-more {
+    color: rgb(130, 212, 214);
+  }
+  .musica-8 .see-more {
+    color: rgb(149, 227, 149);
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 859px) {
+  .musica:not(:last-child):hover {
+    height: 32vh;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0px 200px rgba(187, 187, 187, 0.5),
+      0 0px 40px rgba(255, 255, 255, 0.6), 0 0px 200px rgb(42, 42, 42);
+    padding: 0 20px;
+    transition: all 1s ease-in-out;
+  }
+  .musica-1:hover {
+    background-image: url("https://framerusercontent.com/images/Pgd8sY1dWywSedtq4bQ3AAQV7A.jpg");
+    background-size: 200px;
+    color: red;
+    background-color: black;
+  }
+  .musica-2:hover {
+    background-image: url("https://framerusercontent.com/images/SUSq9Boo1NvfdABpgfAozpLiM.jpg");
+    background-size: 250px;
+    color: rgb(255, 239, 219);
+    background-color: rgb(44, 39, 39);
+  }
+  .musica-3:hover {
+    background-image: url("https://framerusercontent.com/images/tZmJoReFh3ohsEBkJ0siZlwYkT0.jpg");
+    background-size: 250px;
+    color: rgb(255, 140, 0);
+    background-color: rgb(24, 16, 6);
+  }
+  .musica-4:hover {
+    background-image: url("https://framerusercontent.com/images/wWwFFkRtS7Jvnj1MtuV1nFv6E.jpg");
+    background-size: 250px;
+    color: rgb(135, 177, 255);
+    background-color: rgb(36, 48, 69);
+  }
+  .musica-5:hover {
+    background-image: url("https://framerusercontent.com/images/g9zugar5WiC4FOUEIzJakT7u3Gs.jpg");
+    background-size: 250px;
+  }
+  .musica-6:hover {
+    background-image: url("https://framerusercontent.com/images/EbnNHUjuR0Sh3SZAeOvk55R2ssM.jpg");
+    background-size: 250px;
+    color: rgb(228, 128, 128);
+    background-color: rgb(37, 14, 14);
+  }
+  .musica-7:hover {
+    background-image: url("https://framerusercontent.com/images/pzkW1SPKQQealH60Js2mI7XKwQ.jpg");
+    background-size: 250px;
+    color: rgb(130, 212, 214);
+    background-color: rgb(29, 51, 52);
+  }
+  .musica-8:hover {
+    background-image: url("https://framerusercontent.com/images/VeXTQXe6OfwCVVKwAAOlwiGMmY.jpg");
+    background-size: 250px;
+    color: rgb(149, 227, 149);
+    background-color: rgb(3, 8, 3);
+    margin-bottom: -12vh;
+  }
+  .musica:hover .see-more {
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 860px) {
+  .musica:not(:last-child):hover {
+    height: 40.5vh;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0px 200px rgba(187, 187, 187, 0.5),
+      0 0px 40px rgba(255, 255, 255, 0.6), 0 0px 200px rgb(42, 42, 42);
+    padding: 0 30px;
+    transition: all 1s ease-in-out;
+  }
+  .musica-1:hover {
+    background-image: url("https://framerusercontent.com/images/Pgd8sY1dWywSedtq4bQ3AAQV7A.jpg");
+    background-size: 250px;
+    color: red;
+    background-color: black;
+  }
+  .musica-2:hover {
+    background-image: url("https://framerusercontent.com/images/SUSq9Boo1NvfdABpgfAozpLiM.jpg");
+    background-size: 250px;
+    color: rgb(255, 239, 219);
+    background-color: rgb(44, 39, 39);
+  }
+  .musica-3:hover {
+    background-image: url("https://framerusercontent.com/images/tZmJoReFh3ohsEBkJ0siZlwYkT0.jpg");
+    background-size: 250px;
+    color: rgb(255, 140, 0);
+    background-color: rgb(24, 16, 6);
+  }
+  .musica-4:hover {
+    background-image: url("https://framerusercontent.com/images/wWwFFkRtS7Jvnj1MtuV1nFv6E.jpg");
+    background-size: 250px;
+    color: rgb(135, 177, 255);
+    background-color: rgb(36, 48, 69);
+  }
+  .musica-5:hover {
+    background-image: url("https://framerusercontent.com/images/g9zugar5WiC4FOUEIzJakT7u3Gs.jpg");
+    background-size: 250px;
+  }
+  .musica-6:hover {
+    background-image: url("https://framerusercontent.com/images/EbnNHUjuR0Sh3SZAeOvk55R2ssM.jpg");
+    background-size: 250px;
+    color: rgb(228, 128, 128);
+    background-color: rgb(37, 14, 14);
+  }
+  .musica-7:hover {
+    background-image: url("https://framerusercontent.com/images/pzkW1SPKQQealH60Js2mI7XKwQ.jpg");
+    background-size: 250px;
+    color: rgb(130, 212, 214);
+    background-color: rgb(29, 51, 52);
+  }
+  .musica-8:hover {
+    background-image: url("https://framerusercontent.com/images/VeXTQXe6OfwCVVKwAAOlwiGMmY.jpg");
+    background-size: 250px;
+    color: rgb(149, 227, 149);
+    background-color: rgb(3, 8, 3);
+    margin-bottom: -12vh;
+  }
+  .musica:hover .see-more {
+    text-decoration: underline;
+  }
+}

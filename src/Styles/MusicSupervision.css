@@ -1,0 +1,127 @@
+.header {
+  position: relative;
+  top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 300px;
+  cursor: pointer;
+  opacity: 0;
+  animation: moveDown 1s ease-in-out forwards;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 25.6px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 50px;
+  transition: 0.5s ease;
+  transform: rotate(-5deg);
+  position: relative;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 300;
+  margin: 0;
+  transition: 0.5s ease;
+  margin-bottom: 10px;
+}
+.subtitle-1 {
+  position: relative;
+  transform: rotate(5deg);
+  right: -8rem;
+  top: 1rem;
+  animation-delay: 0.2s;
+}
+.subtitle-2 {
+  transform: rotate(10deg);
+  position: relative;
+  top: 3rem;
+  left: -2rem;
+  animation-delay: 0.4s;
+}
+
+h4::after,
+h5::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 50%;
+  height: 1px;
+  bottom: -5px;
+  background-color: rgb(20, 133, 232);
+  box-shadow: 0 0px 100px rgba(187, 187, 187, 1),
+    0 0px 20px rgba(255, 255, 255, 1), 0 0px 200px rgb(42, 42, 42);
+  transition: width 0.7s ease-out, left 0.7s ease-out;
+}
+
+h4:hover {
+  transform: rotate(-1deg);
+}
+h5:hover {
+  transform: rotate(3deg);
+}
+
+h4:hover::after,
+h5:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    width: 100%;
+  }
+  h4 {
+    max-width: 100%;
+  }
+  .subtitle-1 {
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+  }
+  .subtitle-2 {
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  .header {
+    width: 100%;
+  }
+  h4 {
+    width: 100%;
+    margin-right: 120px;
+    position: relative;
+    top: 1rem;
+  }
+  .subtitle-1 {
+    left: 1rem;
+  }
+}
+
+@media screen and (min-width: 680px) and (max-width: 860) {
+  .header {
+    max-width: 100%;
+  }
+}
